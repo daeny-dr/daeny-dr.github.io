@@ -19,8 +19,8 @@ p{
 display: block;
 margin-block-start: 1em;
 margin-block-end: 1em;
-margin-inline-start: 0px;
-margin-inline-end: 0px;
+margin-inline-start: 20px;
+margin-inline-end: 10px;
 unicode-bidi: isolate;
 font-family: "TASA Orbiter", sans-serif;
 font-optical-sizing: auto;
@@ -52,19 +52,79 @@ header{
 
 .grid{
     display: grid;
-    grid-template-rows: repeat(auto-fill, 200px);
+    grid-template-columns:2fr repeat(4, 5fr);
     gap: 25px;
     justify-content:center ;
+}
 
+.gridp{
+    gap: 20px;
+    display: grid;
+    grid-template-columns:1fr repeat(1, 1fr);
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 50px;
+    margin-inline-end: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 255, 0.89);
+    
+}
+
+.grids{
+    display: grid;
+    gap: 20px;
+    grid-template-columns:1fr repeat(2, 3fr);
+    margin-block-start: 4em;
+    margin-block-end: 1em;
+    margin-inline-start: 70px;
+    margin-inline-end: 20px;
+}
+
+.gridss{
+    margin-block-start: 5em;
+    margin-block-end: -5em;
+    margin-inline-start: -50px;
+    margin-inline-end: 20px;
+
+}
+
+.gridm{
+    grid-template-columns:2fr repeat(3, 2fr);
+     margin-block-start:2em;
+     margin-block-end: -10em;
+     margin-inline-start: -5px;
+    margin-inline-end: 40px;
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.fgrid{
+    display: grid;
+    grid-template-columns:2fr repeat(1, 2fr);
+    gap:15px;
+    align-items: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
 }
  
 .rangement{
+    margin-block-end: 10em;
     display: grid;
-    gap: 25px;
-    justify-content:center ;
-     grid-row: 1 / 3;
-     grid-column: repeat(6,6fr);
-    
+    gap: 20px;
+    justify-content:center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.big{
+    margin-block-start: -5em;
+    gap: 20px;
+    grid-row:span 2;
+    grid-column: span 2;
 }
 .item-grid {
         display: grid;
@@ -87,7 +147,7 @@ header{
         font-size: 1.5rem;
         text-shadow: 0 0 5px black;
         opacity: 0;
-        transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
         background-color:rgba(0, 2, 41, 0.59);
         margin: 0;
     }
@@ -103,7 +163,7 @@ header{
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition:  0.3s; backgroud;
+    transition:  0.2s;
 }
 
 .button:hover{
