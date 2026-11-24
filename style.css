@@ -218,7 +218,7 @@ header {
 }
 
 .grids {
-    margin-block-start: -4em;
+    margin-block-start: -6em;
     margin-block-end: 1em;
     margin-inline-start: 10px;
     margin-inline-end: 20px;
@@ -254,11 +254,9 @@ header {
 }
 
 .gridm {
-    grid-column: 1fr;
-    grid-row: 1fr;
     margin-block-start: 3em;
-    margin-inline-start: 20px;
-    margin-inline-end: 20px;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
     align-items: center;
     justify-items: center;
 }
