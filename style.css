@@ -292,7 +292,7 @@ header {
 @media (min-width:700px) {
     .fgrid {
         display: grid;
-        grid-template-columns: 2fr repeat(2, 2fr);
+        grid-template-columns: 2fr repeat(1, 2fr);
         gap: 15px;
         align-items: center;
         margin-block-start: 3em;
