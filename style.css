@@ -20,7 +20,7 @@ img {
 
 p {
     display: block;
-    margin-block-start: -3em;
+    margin-block-start: -2em;
     margin-block-end: 4em;
     margin-inline-start: 7px;
     margin-inline-end: 10px;
@@ -30,7 +30,7 @@ p {
     font-weight: weight;
     font-style: normal;
     color: black;
-    font-size: 10px
+    font-size: 20px
 }
 
 @media (min-width:600px){
@@ -144,10 +144,16 @@ header {
 
 
 .grid {
+    justify-content: center;
+}
+
+@media (min-width:600px) {
+    .grid {
     display: grid;
     grid-template-columns: 2fr repeat(4, 5fr);
     gap: 25px;
     justify-content: center;
+}
 }
 
 .gridp {
@@ -194,7 +200,7 @@ header {
     margin-block-end: 1em;
     margin-inline-start: 50px;
     margin-inline-end: 20px;
-    font-size: 30%;
+    font-size: 70%;
     padding: 5%;
 }
 
@@ -212,9 +218,6 @@ header {
 }
 
 .grids {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr repeat(2, 3fr);
     margin-block-start: -4em;
     margin-block-end: 1em;
     margin-inline-start: 10px;
@@ -251,13 +254,11 @@ header {
 }
 
 .gridm {
-    grid-template-columns: 2fr repeat(3, 2fr);
+    grid-column: 1fr;
+    grid-row: 1fr;
     margin-block-start: 3em;
-    margin-block-end: -10em;
     margin-inline-start: 20px;
     margin-inline-end: 20px;
-    display: grid;
-    gap: 20px;
     align-items: center;
     justify-items: center;
 }
@@ -282,7 +283,7 @@ header {
     grid-template-rows: 2fr repeat(2, 2fr);
     gap: 15px;
     align-items: center;
-    margin-block-start: -1em;
+    margin-block-start: -3em;
     margin-block-end: 1em;
     margin-inline-start: 20px;
     margin-inline-end: 20px;
@@ -304,7 +305,6 @@ header {
 .big1 {
     margin-block-start: -5em;
     gap: 20px;
-    grid-row: span 3;
     grid-column: span 3;
 
 }
@@ -445,7 +445,7 @@ ul {
 
 .icon-btn {
     display: block;
-    margin-block-start: 20em;
+    margin-block-start: 15em;
     margin-block-end: 10em;
     margin-inline-start: -10px;
     margin-inline-end: 10px;
