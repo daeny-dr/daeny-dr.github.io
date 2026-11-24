@@ -254,11 +254,13 @@ header {
 }
 
 .gridm {
+    img{
+        width: 300px;
+        height: auto;
+    }    
     margin-block-start: 3em;
     margin-inline-start: 10px;
     margin-inline-end: 10px;
-    align-items: center;
-    justify-items: center;
 }
 
 @media (min-width:600px) {
